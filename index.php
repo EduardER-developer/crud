@@ -52,9 +52,8 @@ $title = 'Main';
             $products = mysqli_fetch_all($products);
             // var_dump($products); // вывод
 
-            foreach ($products as $product) {
+            foreach ($products as $product):
             ?>
-
                 <tr>
                     <td><?= $product[0] ?></td>
                     <td><?= $product[1] ?></td>
@@ -65,15 +64,15 @@ $title = 'Main';
                 </tr>
 
                 <?php
-            }
+            endforeach;
                 ?>
             </pre>
 
-            
+
         </tr>
     </table>
     <br><br>
-            <a href="/crud/create.php">Создать</a>
+    <a href="/crud/create.php">Создать</a>
 </body>
 
 </html>

@@ -1,9 +1,8 @@
-<?php 
+<?php
 
-$connect = mysqli_connect('localhost','root','','crud');
+$connect = mysqli_connect('localhost', 'root', '', 'crud');
 
-
-if(empty($connect)){
+if (empty($connect)) {
     echo 'Ошибка';
     die();
 }
